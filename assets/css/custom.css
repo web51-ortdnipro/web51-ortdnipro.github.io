@@ -1,0 +1,115 @@
+
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/mono/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+         url('../fonts/mono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('../fonts/mono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+         url('../fonts/mono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/mono/web/eot/JetBrainsMono-Bold.eot') format('embedded-opentype'),
+         url('../fonts/mono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+         url('../fonts/mono/web/woff/JetBrainsMono-Bold.woff') format('woff'),
+         url('../fonts/mono/ttf/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/mono/web/eot/JetBrainsMono-Italic.eot') format('embedded-opentype'),
+         url('../fonts/mono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+         url('../fonts/mono/web/woff/JetBrainsMono-Italic.woff') format('woff'),
+         url('../fonts/mono/ttf/JetBrainsMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono';
+}
+
+
+.copyright {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-section{
+    background: none;
+}
+
+.total-quantity-label {
+    font-size: 0.6em;
+    color: #bbb;
+}
+
+.resume-list p {
+    letter-spacing: -1px;
+    font-size: 1.3em;
+}
+
+.linkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.linkbox > a, .linkbox > i {
+    margin: auto 15px;
+    cursor: pointer;
+}
+
+input {
+    display: block;
+    font-size: 20px;
+    min-width: 420px;    
+}
+
+#search-text {
+    font-weight: 600;
+    min-width: 220px;
+}
+
+.search-block {
+    margin-left:auto;
+}
+
+.section-title {
+    margin-bottom: 70px;
+}
+
+@media (max-width:576px){
+    .resume-list h2, .section-title h2 {
+        font-size: 28px;
+    } 
+
+    .site-logo h2 {
+        font-size: 24px;
+    } 
+
+    .social-section{
+        padding-top: 36px;
+        padding-bottom: 26px;
+    }
+
+    .spad {
+        padding-top: 65px;
+    }
+
+    input {
+      
+        margin: 20px;
+        font-size: 20px;
+        min-width: 290px;
+        padding: 4px;    
+    }
+}
